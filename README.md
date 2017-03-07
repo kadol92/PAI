@@ -1,1 +1,1 @@
-"PAI" 
+Simple WWW site (PHP)
