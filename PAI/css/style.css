@@ -1,0 +1,308 @@
+body {
+    background-color: #303030;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.logo {
+    width: 600px;
+    padding: 25px;
+    height: 105px;
+    color:#fac113;
+    line-height: 170%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: -6px;
+    font-family: 'Bungee', cursive;
+
+}
+.logo > img{
+    float: left;
+}
+.navConteiner{
+    width: 100%;
+    z-index: 1000;
+}
+.smallLogo{
+    display: none;
+    float: left;
+
+}
+.smallSiteName{
+    font-family: 'Bungee', cursive;
+    letter-spacing: -2px;
+    line-height: 140%;
+    color: #303030;
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 60px;
+    font-size: 24px;
+}
+.smallLogo > a > img{
+    padding-top: 10px;
+    padding-left: 15px;
+    position: absolute;
+}
+
+.navigation {
+    padding: 10px 0;
+    background-color: #fac113;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 1000;
+}
+
+
+ol{
+    font-family: 'Viga', sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+    color: #303030;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+li.user{
+    width: 230px;
+
+}
+ol > li > a{
+    color: #303030;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ol > li > a:hover{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+ol > li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed #303030;
+}
+ol > li:first-child{
+    border-left: 1px dashed #303030;
+    width: 180px;
+
+}
+
+ol > li:hover{
+    background-color: #e9b111;
+}
+
+ol > li.user > .userPanel{
+    display: none;
+}
+li.user:hover{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+
+ol > li.user:hover > .userPanel{
+    display: block;
+    text-shadow: none;
+    color: #303030;
+
+
+}
+
+.userPanel{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    padding: 0;
+    margin-left: -120px;
+    background-color: #e9b111;
+    height: 150px;
+    width: 350px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: default;
+
+
+    
+}
+
+.userAvatar{
+
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+
+}
+.userAvatar > img{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.userPanel > ul{
+    padding-top: 20px;
+    padding-left: 140px;
+    letter-spacing: 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 150%;
+    list-style-type: none;
+}
+
+.userPanel > ul > li > a{
+    color: #303030;
+    text-decoration: none;
+}
+
+.userPanel > ul > li > a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 25px;
+    border-right: 1px dashed  #555555;
+    border-left: 1px dashed #555555;
+    width: 864px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post{
+    border-radius: 5px;
+    border: 1px solid #666666;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    width: 824px;
+    background-color: #444444;
+
+}
+
+.post > h4{
+    border-radius: 5px;
+    border: 1px solid #777777;
+    margin: 1px 1px 0px 1px;
+
+
+    padding: 10px 10px 10px 30px;
+    display: block;
+    background-color: #555555;
+    color: #fefefe;
+}
+
+.postContent{
+    text-align: justify;
+    margin: 25px;
+    font-size: 15px;
+}
+.postInfo{
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 1px;
+    border: 1px solid #777777;
+    background-color: #555555;
+
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+.loginForm{
+
+}
+input.login[type=text],
+input.login[type=password]
+{
+    width: 120px;
+    background-color: #ffedc1;
+    color: #666;
+    border: 2px solid #b78913;;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input.login[type=text]:focus,
+input.login[type=password]:focus
+{
+
+    border: 2px solid #efdcb5;
+    background-color: #ffedc1;
+    color: #523b11;
+}
+
+input.login[type=submit]
+{   font-family: 'Viga', sans-serif;
+    width: 60px;
+    background-color: #523b11;
+    font-size: 12px;
+    color: #fff;
+    padding: 5px 2px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+input.login[type=submit]:hover
+{
+
+    background-color: #86621a;
+
+}
+.fileUpload{
+    padding-left: 125px;
+}
+.loginError{
+    color: red;
+    font-size: 12px;
+}
+.registerInfo{
+    color: #303030;
+    font-size: 12px;
+}
+
+.registerInfo > a{
+    color: #414141;
+    text-decoration: none;
+}
+
+.registerInfo > a:hover{
+    text-decoration: underline;
+}
